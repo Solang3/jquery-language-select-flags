@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+.form-language label{
+	display: block;
+	line-height: 2em;
+	float: left;
+}
+	
+/* ---------------------------------------------------------------------- */
+/* Generic
+/* ---------------------------------------------------------------------- */
+#switcher, #switcher * {
+	margin: 0;
+	padding: 0; 
+	outline: none;
+}
+
+#switcher ul {
+	list-style: none;	
+}
+
+#switcher {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #444;
+	line-height: normal;
+	position: relative; /* sets the initial position for the drop-down menu */	
+	z-index: 100;
+	float: right;
+	width: 200px;
+}
+
+#switcher form {
+	display: none;	
+}
+
+/* ---------------------------------------------------------------------- */
+/* JS-created Code
+/* ---------------------------------------------------------------------- */
+#switcher a {
+	text-decoration: none;
+	display: block;	
+	padding: 1px 6px 1px 28px; /* 6px 6px 6px 28px */
+	color: #ccc;
+	background-image:url(../images/flags/flags_small.png);
+	background-repeat: no-repeat;
+	background-position: 6px center; 
+}
+
+#switcher a:hover {
+	color: #fff;	
+}
+
+#switcher a.current:link, #switcher a.current:visited, #switcher a.current:active {
+	position: relative; /* sets the initial position for the trigger arrow */
+	background-color: #012544;
+	border: 1px solid #1B3E5B;
+	border-radius: 3px;
+	height: 1.25em; /* 15px */
+	width: 135px;
+	color: #ccc;
+}
+
+#switcher a.current:hover, 
+#switcher ul.dropdown li:hover {
+	background-color: #012544;
+}
+
+#switcher a.active { /* This style is applied as long as the drop-down menu is visible. */
+	border-bottom: none !important;
+	border-radius: 3px 3px 0 0 !important;
+}
+
+#switcher span.trigger {
+	display: block;
+	position: absolute;
+	width: 9px;
+	height: 8px;
+	text-indent: -10000em;
+	top: 5px; /* 6px */
+	right: 6px;
+}
+
+#switcher a.current:link span.trigger, #switcher a.current:visited span.trigger {
+	background: url(../images/trigger.png) no-repeat left top;	
+}
+
+
+
+/* Drop-Down Menu */
+
+#switcher ul.dropdown { 
+	display: none;
+	position: absolute;
+	top: 18px; /* 28px */
+	left: 0;
+	background-color: #012544;
+	border: 1px solid #1B3E5B;
+	border-top: none !important;
+	border-radius: 0 0 3px 3px;
+	width: 169px;
+}
+
+#switcher ul.dropdown li { 
+	border-top: 1px dotted #333;
+}
+
+#switcher ul.dropdown li:last-child { 
+	border-radius: 0 0 3px 3px;
+}
+
+/* Flags */
+#switcher #nl{
+	background-position: 6px -12px;
+}
+#switcher #dk{
+	background-position: 6px 3px;
+}
+#switcher #en{
+	background-position: 6px -26px;
+}
+#switcher #su{
+	background-position: 6px -40px;
+}
+#switcher #fr{
+	background-position: 6px -54px;
+}
+#switcher #de{
+	background-position: 6px -68px;
+}
+#switcher #it{
+	background-position: 6px -82px;
+}
+#switcher #po{
+	background-position: 6px -96px;
+}
+#switcher #pt{
+	background-position: 6px -110px;
+}
+#switcher #ru{
+	background-position: 6px -124px;
+}
+#switcher #es{
+	background-position: 6px -138px;
+}
+#switcher #sv{
+	background-position: 6px -152px;
+}

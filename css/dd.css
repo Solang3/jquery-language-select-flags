@@ -1,0 +1,228 @@
+
+Overlays
+
+Options
+Opacity
+0.5
+Position (try dragging)
+0
+0
+Lock?
+Z-Index
+Getting Started
+
+Pixel Perfect is a firefox firebug extension that allows web developers to easily overlay a web composition over top of the developed html. Switching the composition on and off allows the developer to see how many pixels they are off while in development.
+
+To get started, click on the "Add overlay" button to add your design composition.
+
+For more information, please refer to the "Help" menu, or visit http://www.pixelperfectplugin.com
+.borderRadius {
+    border-radius: 5px 5px 5px 5px;
+}
+.borderRadiusTp {
+    border-radius: 5px 5px 0 0;
+}
+.borderRadiusBtm {
+    border-radius: 0 0 5px 5px;
+}
+.ddcommon {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+}
+.ddcommon ul {
+    margin: 0;
+    padding: 0;
+}
+.ddcommon ul li {
+    list-style-type: none;
+}
+.borderRadiusTp ul li:last-child {
+    border-bottom: 0 none #C3C3C3;
+    border-radius: 0 0 5px 5px;
+}
+.borderRadiusBtm ul li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.ddcommon .disabled img, .ddcommon .disabled span, .ddcommon.disabledAll {
+    color: #999999;
+    opacity: 0.5;
+}
+.ddcommon .clear {
+    clear: both;
+}
+.ddcommon .shadow {
+    box-shadow: 5px 5px 5px -5px #888888;
+}
+.ddcommon input.text {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none;
+    color: #7E7E7E;
+    display: block;
+    height: 98%;
+    left: 2px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 98%;
+}
+.ddOutOfVision {
+    display: inline-block;
+    position: relative;
+}
+.borderRadius .shadow {
+    box-shadow: 5px 5px 5px -5px #888888;
+}
+.borderRadiusBtm .shadow {
+    box-shadow: -5px -5px 5px -5px #888888;
+}
+.borderRadiusTp .border, .borderRadius .border {
+    border-radius: 0 0 5px 5px;
+}
+.borderRadiusBtm .border {
+    border-radius: 5px 5px 0 0;
+}
+img.fnone {
+    float: none !important;
+}
+.ddcommon .divider {
+    height: 100%;
+    position: absolute;
+    width: 0;
+}
+.ddcommon .arrow {
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+}
+.ddcommon .arrow:hover {
+    background-position: 0 100%;
+}
+.ddcommon .ddTitle {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.ddcommon .ddTitle .ddTitleText {
+    display: block;
+}
+.ddcommon .ddTitle .ddTitleText .ddTitleText {
+    padding: 0;
+}
+.ddcommon .ddTitle .description {
+    display: block;
+}
+.ddcommon .ddTitle .ddTitleText img {
+    float: left;
+    position: relative;
+    vertical-align: middle;
+}
+.ddcommon .ddChild {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+.ddcommon .ddChild li {
+    clear: both;
+}
+.ddcommon .ddChild li .description {
+    display: block;
+}
+.ddcommon .ddChild li img {
+    border: 0 none;
+    float: left;
+    position: relative;
+    vertical-align: middle;
+}
+.ddcommon .ddChild li.optgroup {
+    padding: 0;
+}
+.ddcommon .ddChild li.optgroup .optgroupTitle {
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.ddcommon .ddChild li.optgroup ul li {
+    padding: 5px 5px 5px 15px;
+}
+.ddcommon .noBorderTop {
+    border-top: 0 none !important;
+    margin: 0;
+    padding: 0;
+}
+.dd {
+    border: 1px solid #C3C3C3;
+}
+.dd .divider {
+    border-left: 1px solid #C3C3C3;
+    border-right: 1px solid #FFFFFF;
+    right: 24px;
+}
+.dd .arrow {
+    background: url("../../images/msdropdown/skin1/dd_arrow.gif") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    margin-top: -8px;
+    width: 16px;
+}
+.dd .arrow:hover {
+    background-position: 0 100%;
+}
+.dd .ddTitle {
+    background: url("../../images/msdropdown/skin1/title-bg.gif") repeat-x scroll left top #E2E2E4;
+    color: #000000;
+}
+.dd .ddTitle .ddTitleText {
+    padding: 5px 20px 5px 5px;
+}
+.dd .ddTitle .ddTitleText .ddTitleText {
+    padding: 0;
+}
+.dd .ddTitle .description {
+    color: #666666;
+    font-size: 12px;
+}
+.dd .ddTitle .ddTitleText img {
+    padding-right: 5px;
+}
+.dd .ddChild {
+    background-color: #FFFFFF;
+    border: 1px solid #C3C3C3;
+    left: -1px;
+}
+.dd .ddChild li {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #C3C3C3;
+    padding: 5px;
+}
+.dd .ddChild li .description {
+    color: #666666;
+}
+.dd .ddChild li .ddlabel {
+    color: #333333;
+}
+.dd .ddChild li.hover {
+    background-color: #F2F2F2;
+}
+.dd .ddChild li img {
+    padding: 0 6px 0 0;
+}
+.dd .ddChild li.optgroup {
+    padding: 0;
+}
+.dd .ddChild li.optgroup .optgroupTitle {
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.dd .ddChild li.optgroup ul li {
+    padding: 5px 5px 5px 15px;
+}
+.dd .ddChild li.selected {
+    background-color: #D5D5D5;
+    color: #000000;
+}

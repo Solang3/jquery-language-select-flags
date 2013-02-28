@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="css/select_styles.css"/>
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/jquery.polyglot.language.switcher.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#switcher').polyglotLanguageSwitcher({
+			effect: 'fade'
+		});
+	});
+</script> 
+</head>
+<body class=" cms-index-index cms-home">
+<div class="wrapper">
+	<div class="page">
+		<div class="header-container">
+			<div class="toplinks">
+				<div class="language">  
+					<div class="form-language">
+						<label for="select-language">Select language:</label>
+							<div id="switcher">
+								<form action="#">
+									<select onchange= "window.location.href=this.value" title="Your Language" id="select-language" name="language-styled" class="language-styled">
+										<option value="http://vetus.magento.prelive.nu/?___store=da&amp;___from_store=nl" id="dk">Dansk</option>
+										<option selected="selected" value="http://vetus.magento.prelive.nu/?___store=nl&amp;___from_store=nl" id="nl">Nederlands</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=en&amp;___from_store=nl" id="en">English</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=fi&amp;___from_store=nl" id="su">Suomi</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=fr&amp;___from_store=nl" id="fr">Fran&ccedil;ais</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=de&amp;___from_store=nl" id="de">Deutsch</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=it&amp;___from_store=nl" id="it">Italiano</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=pl&amp;___from_store=nl" id="po">Polski</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=pt&amp;___from_store=nl" id="pt">Portugu&ecirc;s</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=ru&amp;___from_store=nl" id="ru">ру́сский</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=es&amp;___from_store=nl" id="es">Espa&ntilde;ol</option>
+										<option value="http://vetus.magento.prelive.nu/?___store=sw&amp;___from_store=nl" id="sv">Svenska</option>
+									</select>
+								</form>
+							</div>
+						</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
